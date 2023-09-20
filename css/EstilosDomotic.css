@@ -1,3 +1,35 @@
+/* márgenes y rellenos para todos los elementos */
+* {
+   /* Establecer márgenes de todos los elementos en cero, eliminando el espacio alrededor de ellos */
+   margin: 0;
+
+   /* Establecer relleno de todos los elementos en cero, eliminando cualquier espacio dentro de ellos */
+   padding: 0;
+
+   /* Cambiar el modelo de caja para que el tamaño total incluya el relleno y el borde */
+   box-sizing: border-box;
+}
+
+
+/* Establecer una fuente y color de texto predeterminados */
+body {
+   /* Configurar la fuente principal para el texto en el cuerpo del documento */
+   font-family: Arial, sans-serif;
+
+   /* Establecer el tamaño de fuente predeterminado para el cuerpo del documento */
+   font-size: 16px;
+
+   /* Definir la altura de línea, que es la distancia entre líneas de texto */
+   line-height: 1.6;
+
+   /* Configurar el color del texto predeterminado en un tono de gris */
+   color: #333;
+
+   /* Establecer el color de fondo del cuerpo del documento en blanco */
+   background-color: #fff;
+}
+
+
 /** PARA EL HEADER DE TODAS LAS PAGINAS **/
 header {
    margin: 3%;
@@ -6,6 +38,35 @@ header {
 p, h1, h2, h3, h4, h5, h6 {
    margin-right: 2%;
    margin-left: 2%;
+}
+
+/* Estilos para las imágenes */
+img {
+   max-width: 25%;
+   height: auto;
+}
+/* Si es necesario agregar estilos diferentes para adaptarlo a cada dispositivo dentro de cada @media */
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 1024px) {
+   /* Estilos específicos para pantallas grandes */
+   
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (max-width: 1023px) {
+   /* Estilos específicos para pantallas medianas */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+   /* Estilos específicos para pantallas pequeñas */
+}
+
+
+/* Estilo generales */
+
+.logo {
+   width: 15%;
 }
 
 /** VEAN SI SIRVE EL DE ESPACIO, YA QUE PARA ESO TIENEN EL TEXT-CENTER DE BOOTSTRAP 5 **/
