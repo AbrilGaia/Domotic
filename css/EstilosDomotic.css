@@ -1,6 +1,20 @@
+/** PARA EL HEADER DE TODAS LAS PAGINAS **/
+header {
+   margin: 3%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+   margin-right: 2%;
+   margin-left: 2%;
+}
+
+/** VEAN SI SIRVE EL DE ESPACIO, YA QUE PARA ESO TIENEN EL TEXT-CENTER DE BOOTSTRAP 5 **/
 .espacio{
    margin: 2%;
 }
+
+/** AGREGUEN EN LA PROPIEDAD CLASS DE LAS ETIQUETAS (H1,H2,...) AL LADO DE LO QUE HAYA AHI "titulos",
+sin crear otro class **/
 .titulos{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    color: rgb(9, 128, 219);
