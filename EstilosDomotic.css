@@ -1,0 +1,14 @@
+.espacio{
+   margin: 2%;
+}
+.titulos{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: rgb(9, 128, 219);
+   display: flex;
+   text-align: center;
+}
+
+.centrar {
+   display: flex;
+   text-align: center;
+}
