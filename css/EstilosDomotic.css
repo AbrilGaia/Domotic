@@ -2,11 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Roboto:ital,wght@1,300&display=swap');
 /* márgenes y rellenos para todos los elementos */
 * {
-   /* Establecer márgenes de todos los elementos en cero, eliminando el espacio alrededor de ellos */
-   margin: 0;
-
-   /* Establecer relleno de todos los elementos en cero, eliminando cualquier espacio dentro de ellos */
-   padding: 0;
 
    /* Cambiar el modelo de caja para que el tamaño total incluya el relleno y el borde */
    box-sizing: border-box;
