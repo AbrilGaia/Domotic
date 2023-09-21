@@ -66,6 +66,12 @@ img {
 .logo {
    width: 15%;
 }
+/* estilos para la imagen del logo footer*/
+.icono-footer {
+   width: 30%;
+   margin-top: 20%; /* Mueve la imagen hacia abajo 50 píxeles */
+    margin-left: 20%; /* Mueve la imagen hacia la derecha 50 píxeles */
+}
 
 /** VEAN SI SIRVE EL DE ESPACIO, YA QUE PARA ESO TIENEN EL TEXT-CENTER DE BOOTSTRAP 5 **/
 .espacio{
