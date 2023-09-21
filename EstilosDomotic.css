@@ -1,14 +1,154 @@
+/*Importé la dirección de google font para mejor tipo de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+/* márgenes y rellenos para todos los elementos */
+* {
+   /* Establecer márgenes de todos los elementos en cero, eliminando el espacio alrededor de ellos */
+   margin: 0;
+
+   /* Establecer relleno de todos los elementos en cero, eliminando cualquier espacio dentro de ellos */
+   padding: 0;
+
+   /* Cambiar el modelo de caja para que el tamaño total incluya el relleno y el borde */
+   box-sizing: border-box;
+   font-family: 'Lato', sans-serif;
+}
+
+
+/* Establecer una fuente y color de texto predeterminados */
+body {
+   /* Configurar la fuente principal para el texto en el cuerpo del documento */
+   font-family: Arial, sans-serif;
+
+   /* Establecer el tamaño de fuente predeterminado para el cuerpo del documento */
+   font-size: 16px;
+
+   /* Definir la altura de línea, que es la distancia entre líneas de texto */
+   line-height: 1.6;
+
+   /* Configurar el color del texto predeterminado en un tono de gris */
+   color: #333;
+
+   /* Establecer el color de fondo del cuerpo del documento en blanco */
+   background-color: #fff;
+}
+
+
+/** PARA EL HEADER DE TODAS LAS PAGINAS **/
+header {
+   margin: 3%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+   margin-right: 2%;
+   margin-left: 2%;
+}
+
+/* Estilos para las imágenes */
+img {
+   max-width: 25%;
+   height: auto;
+}
+/* Si es necesario agregar estilos diferentes para adaptarlo a cada dispositivo dentro de cada @media */
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 1024px) {
+   /* Estilos específicos para pantallas grandes */
+   
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media (max-width: 1023px) {
+   /* Estilos específicos para pantallas medianas */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+   /* Estilos específicos para pantallas pequeñas */
+}
+
+
+/* Estilo generales */
+
+.logo {
+   width: 15%;
+}
+
+/** VEAN SI SIRVE EL DE ESPACIO, YA QUE PARA ESO TIENEN EL TEXT-CENTER DE BOOTSTRAP 5 **/
 .espacio{
    margin: 2%;
 }
+
+/** AGREGUEN EN LA PROPIEDAD CLASS DE LAS ETIQUETAS (H1,H2,...) AL LADO DE LO QUE HAYA AHI "titulos",
+sin crear otro class **/
 .titulos{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    color: rgb(9, 128, 219);
+}
+
+
+/*Clase del footer*/
+.pie-página{
+   width: 100%;
+   height: 350px;
+   background-color: rgb(45, 133, 133);
+}
+.pie-página .grupo-1{
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 50px;
+   padding: 45px 0px;
+}
+.pie-página .grupo-1  .box figure{
+   width: 100%;
+   height: 100%;
    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.pie-página .grupo-1  .box figure  img{
+   width: 150px;
+}
+.pie-página .grupo-1  .box h2{
+   color: rgb(114, 168, 215);
+   margin-bottom: 25px;
+   font-size: 20px;
+}
+.pie-página .grupo-1  .box  p{
+   color: rgb(175, 206, 206);
+   margin-bottom: 10px;
+}
+.pie-página .grupo-1  .red-social a{
+   display: inline-block;
+   text-decoration: none;
+   width: 45px;
+   height: 45px;
+   line-height: 45px;
+   color: rgb(51, 165, 165);
+   margin-right: 10px;
+   background-color: rgb(110, 158, 200);
    text-align: center;
 }
 
-.centrar {
-   display: flex;
+.pie-página .grupo-1  .red-social a:hover{
+   color: rgb(63, 255, 255);
+}
+.pie-página .grupo-2{
+   background-color: rgb(113, 146, 146);
+   padding: 15px 10px;
    text-align: center;
+   color: rgb(210, 246, 246);
+   height: 50px;
+}
+.pie-página .grupo-2 small{
+   font-size: 15px;
+}
+@media screen and  (max-width:800px) {
+   .pie-página .grupo-1{
+       width: 90%;
+       grid-template-columns: repeat(1, 1fr);
+       grid-gap: 30px;
+       padding: 35px 0px;
+   }
 }
