@@ -54,10 +54,10 @@
     </header>
     
     <!-- El cuerpo de la página, donde se encuentra la información -->
-    <main>
+    
         <!-- El atributo text-center en class sirve para centrar texto -->
         <!-- El título del tema -->
-        <h1 class="text-center titulos" >DOMOTIC-Seguridad y Calidad del Aire</h1>
+        <h2 class="text-center titulos" >Seguridad y Calidad del Aire</h2>
 
           <!-- Párrafos de lo que va a hablar -->
           <p class="text-center">La necesidad de calefaccionarnos es propia de la especie humana. El fuego y los 
@@ -72,19 +72,48 @@
             mascotas.</p>
 
         <!-- El título del tema -->
-        <h1 class="text-center">¿Qué es DOMOTIC?</h1>
+        <h3 class="text-center">¿Qué es DOMOTIC?</h3>
           <!-- Párrafos de lo que va a hablar -->
             <!-- La etiqueta <b> sirve para poner la palabra en NEGRITA, ustedes vean si les gusta o no -->
-          <p class="text-center"><b>DOMOTIC</b> surge como proyecto escolar de la Escuela Experimental con 
+          <p class="text-center"><span class="color-en-domotic">Domotic</span> surge como proyecto escolar de la Escuela Experimental con 
             Énfasis en TIC Pro-A Sede San Pedro de Córdoba, Traslasierra. Consiste en la elaboración de un sistema de 
             detección de gases (butano, propano, metano) y de monóxido de carbono, a fin de controlar la seguridad y 
             calidad del aire que respiramos en nuestros hogares y aquellos ambientes que habitamos.</p>
       
-          <p class="text-center"><b>DOMOTIC</b> consta de una placa arduino (Arduino es una plataforma de hardware libre, 
+          <p class="text-center"><span class="color-en-domotic">Domotic</span> consta de una placa arduino (Arduino es una plataforma de hardware libre, 
             basada en una placa con un micro controlador y un entorno de desarrollo (software), diseñada para facilitar 
             el uso de la electrónica en proyectos multidisciplinares), también incorpora actuadores como LEDs y BUZZER, 
             cables conectores y su respectivo Software.</p>
-        
+           
+            <div class="color-fondo-carrucel">
+            <div class="container mt-5">
+              <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+                  <div data-bs-interval="5000" class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="carousel-container">
+                              <img src="img/armadurasensor_index.jpeg" alt="Imagen 1" class="carousel-img img-fluid">
+                          </div>
+                      </div>
+                      <div data-bs-interval="5000" class="carousel-item">
+                          <div class="carousel-container">
+                              <img src="img/armadurasensor_index.jpeg" alt="Imagen 2" class="carousel-img img-fluid">
+                          </div>
+                      </div>
+                      <!-- Agrega más elementos "carousel-item" para más imágenes -->
+                  </div>
+                  
+                  <!-- Botones "Anterior" y "Siguiente" -->
+                  <a class="carousel-control-prev" href="#miCarrusel" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#miCarrusel" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                  </a>
+              </div>
+          </div>
+        </div>
         <!-- Otro título de un tema? Si es un parrafo más, vean de ponerle un título como
           "¿De dónde viene la palabra DOMOTIC?" o "¿Cuál es el significado de la palabra DOMOTIC?", y luego poner este
           texto en un parrafo (sin article o section, no hace mucha falta eso, ya que se usa para poner estilos, ya 
@@ -119,5 +148,6 @@
        -Todos los derechos reservados</small>
     </div>
     </footer>
+    <script src="carrusel.js"></script>
   </body>
 </html>

@@ -15,7 +15,6 @@ body {
    font-family: Arial, sans-serif;
 
    /* Establecer el tamaño de fuente predeterminado para el cuerpo del documento */
-   font-size: 16px;
 
    /* Definir la altura de línea, que es la distancia entre líneas de texto */
    line-height: 1.6;
@@ -39,30 +38,60 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Estilos para las imágenes */
-img {
-   max-width: 25%;
-   height: auto;
-}
+/*img {width: 100%;height: auto;}*/
+
+
 /* Si es necesario agregar estilos diferentes para adaptarlo a cada dispositivo dentro de cada @media */
 /* Estilos para pantallas grandes (escritorio) */
 @media (min-width: 1024px) {
    /* Estilos específicos para pantallas grandes */
+   body {
+   font-size: 18x;}
    
 }
 
 /* Estilos para pantallas medianas (tabletas) */
 @media (max-width: 1023px) {
    /* Estilos específicos para pantallas medianas */
+   body {
+   font-size: 18px;}
 }
 
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
    /* Estilos específicos para pantallas pequeñas */
+   body{
+   font-size: 16px;}
+   .carousel-inner .row .col-md-6 img {
+      margin-top: 10px; /* Cambia este valor al margen superior deseado */
+      margin-bottom: 10px; /* Cambia este valor al margen inferior deseado */
+    }
 }
 
 
 /* Estilo generales */
 
+/* Estilo para el contenedor del carrusel */
+.container mt-5 {
+   text-align: center;
+}
+
+/* Estilo para la imagen en el carrusel */
+.carousel-img {
+   width: 800%; /* Tamaño deseado del ancho de la imagen */
+   display: block;
+   margin: 0 auto; /* Centrar horizontalmente la imagen */
+}
+
+
+.color-fondo-carrucel{
+   background-color: rgb(0, 0, 0);
+}
+
+
+.color-en-domotic{
+   color: rgb(9, 128, 219);
+}
 .logo {
    width: 15%;
 }
